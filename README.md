@@ -1,2 +1,2 @@
 # ToyPHP
-PHP framework
+ToyPHP (H)MVC PHP framework
