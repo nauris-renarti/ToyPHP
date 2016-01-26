@@ -24,7 +24,7 @@ $app->controller('WelcomeController', function(){
 $app->WelcomeController->run();
 
 // Debug
-print '<script>$(function(){$("body").after("<p style=\"text-align: center; margin: 15px 0;\">Page rendered in ' . number_format(microtime(true) - $benchmark, 4) . '(sec.)</p>")});</script>';
+print '<script>$(function(){$("body").append("<p style=\"text-align: center; margin: 15px 0;\">Page rendered in ' . number_format(microtime(true) - $benchmark, 4) . '(sec.)</p>")});</script>';
 
 /* End of file index.php */
 /* Location: ./index.php */
