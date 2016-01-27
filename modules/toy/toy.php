@@ -119,7 +119,7 @@ class toy
  * @property \toy\services\XsrfToken $xsrf
  * @property \toy\services\Agent $agent
  * @property \toy\services\Uri $uri
- * @property \toy\services\Event $event
+ * @property \toy\services\Event $events
  * @property \toy\services\Translator $i18n
  * @method string ip() ip() return remote clietn IP address
  * @method bool log() log($message, $type = 'info', $prefix = 'log') return true if success false otherwise
