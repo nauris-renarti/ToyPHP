@@ -63,6 +63,14 @@ class Request
 		$this->method = isset($_SERVER['REQUEST_METHOD'])? strtolower($_SERVER['REQUEST_METHOD']) : 'get';
 	}
 	
+    /**
+     * @return string|array
+     */
+	public function getInput()
+	{
+		return $this->_PHP_INPUT;
+	}
+	
 	/**
 	 * 
 	 * @param array $value
