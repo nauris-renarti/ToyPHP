@@ -202,7 +202,7 @@ class Param
 	 */
 	public function asObject() {
 		if (!isset($this->_stream[$this->name])) return false;
-		return rti::app()->encoder()->decrypt( $this->asString() );
+		return toy::module()->encoder()->decrypt( $this->asString() );
 	}
 	
 	/**
