@@ -121,8 +121,10 @@ class toy
  * @property \toy\services\Uri $uri
  * @property \toy\services\Event $events
  * @property \toy\services\Translator $i18n
+ * @property \toy\services\Session $session
  * @method string ip() ip() return remote clietn IP address
  * @method bool log() log($message, $type = 'info', $prefix = 'log') return true if success false otherwise
+ * @method bool logError()  logError($message, $type = 'info', $prefix = 'errors') return true if success false otherwise
  * @method array|bool auth() auth($fn = false) auth result $fn is valid callback
  * @method string baseUrl() baseUrl($https = 'http://') return web app base url
  * @method string siteUrl() siteUrl($path = '', $https = 'http://') return web app site url (typically HMVC hierarchical url path)
@@ -485,9 +487,11 @@ $options = array(
 		array('uri',     'toy\services\Uri'),
 		array('events',  'toy\services\Event'),		
 		array('i18n',    'toy\services\Translator'),
+		array('session', 'toy\services\Session'),
 		// filters
 		array('ip',         'toy\services\Request::ip'),
 		array('log',        'toy\filters\Loger::log'),
+		array('logError',   'toy\filters\Loger::logError'),
 		array('auth',       'toy\filters\HttpAuthentication::ask'),
 		array('baseUrl',    'toy\filters\ServerUrls::baseUrl'),
 		array('siteUrl',    'toy\filters\ServerUrls::siteUrl'),

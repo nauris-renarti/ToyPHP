@@ -46,6 +46,17 @@ class Loger
 		return true;
 	}
 	
+	/**
+	 * 
+	 * @param unknown $message
+	 * @param string $type
+	 * @param string $prefix
+	 */
+	public static function logError($message, $type = 'info', $prefix = 'errors')
+	{
+		return self::log($message, $type, $prefix);
+	}
+	
 }
 
 /* End of file Loger.php */
